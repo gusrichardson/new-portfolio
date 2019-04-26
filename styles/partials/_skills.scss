@@ -43,8 +43,9 @@ figure {
 }
 
 figure:hover {
-    transform: skewX(-5deg);
+    transform: skewX(-5deg) scale(1.05);
     margin-right: 30px;
     margin-top: 30px;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.1);
 }
 

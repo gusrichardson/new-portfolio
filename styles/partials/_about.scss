@@ -11,6 +11,9 @@
 
 .text-container {
     width: calc(100% - 260px);
+    p {
+        margin-top: 0;
+    }
 }
 
 .img-container {

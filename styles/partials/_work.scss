@@ -8,16 +8,17 @@
 }
 
 .work-carousel {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    border: 5px solid $accent;
+    border-radius: 5px;
     background: $secondary;
 }
 
 .work-display-flex {
     height: 400px;
     display: flex;
-    border: 2px solid red;
 }
 
 .prev-slide, .next-slide {
@@ -25,6 +26,13 @@
     top: 40%;
     font-size: 3rem;
     color: $accent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    color: $secondary;
+    transform: scale(1.1);
 }
 .prev-slide {
     left: -60px;

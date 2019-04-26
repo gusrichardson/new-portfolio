@@ -58,8 +58,8 @@ $(document).ready(function () {
             slideIndex = 1;
         }
         //if the argument goes below zero, set the slide index to the last slide
-        if (n < 0) {
-            slideIndex = slides.length;
+        if (n <= 0) {
+            slideIndex = 4;
         }
         //for each of the slides in the array set display to none
         for (i = 0; i < slidesArray.length; i++) {

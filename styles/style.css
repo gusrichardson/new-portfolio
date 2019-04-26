@@ -712,9 +712,11 @@ figure:hover {
 }
 
 .work-carousel {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  border: 5px solid #fe3d4e;
+  border-radius: 5px;
   background: #3BF4DB;
 }
 
@@ -723,7 +725,6 @@ figure:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
 }
 
 .prev-slide, .next-slide {
@@ -731,6 +732,15 @@ figure:hover {
   top: 40%;
   font-size: 3rem;
   color: #fe3d4e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.prev-slide:hover, .next-slide:hover {
+  color: #3BF4DB;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .prev-slide {

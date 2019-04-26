@@ -1,0 +1,67 @@
+#about {
+    min-height: 100vh;
+    background: $contrast;
+    position: relative;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: calc(100% - 260px);
+}
+
+.img-container {
+    width: 220px;
+    height: 330px;
+    position: relative;
+    box-shadow: -30px 30px 0 -20px $secondary;
+}
+
+#oscar, #giorgi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+#toggle-giorgi, #toggle-oscar {
+    color: $accent;
+    cursor: default;
+}
+
+#wave {
+    position: absolute;
+    margin-left: 3px;
+}
+#wave:hover {
+    animation: wave 1s 1;
+    cursor: default;
+}
+
+#about-arrow-down {
+    background: #F2F2F2;
+}
+
+//ANIMATION
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg) 
+    }
+    25% {
+        transform: rotate(15deg) 
+    }
+    50% {
+        transform: rotate(-15deg)
+    }
+    75% {
+        transform: rotate(15deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}

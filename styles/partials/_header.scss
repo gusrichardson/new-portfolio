@@ -1,0 +1,90 @@
+
+header {
+    min-height: 100vh;
+    background: url(../../assets/laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    position: relative;
+    span {
+        display: block;
+    }
+}
+
+.header-wrapper {
+    min-height: 65vh;
+    position: relative;
+}
+
+.social-nav {
+    position: fixed;
+    width: 40px;
+    height: 210px;
+    left: 10px;
+    top: calc(50% - 105px);
+    display: none;
+    z-index: 20;
+    i {
+        color: $dark;
+        margin: 15px 10px;
+        transition: all 0.3s;
+    }
+    i:hover {
+        color: $accent;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+}
+
+.title-container {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 540px;
+    padding-top: 40px;
+    i {
+        margin-top: 30px;
+     }
+}
+
+
+#name {
+    font-size: 6rem;
+    animation: animate-text 3s infinite linear;
+}
+
+
+//TITLE TEXT ANIMATION
+@keyframes animate-text {
+    0% {
+        text-shadow: 1px 1px $contrast,
+        2px 2px #3BF4DB,
+        3px 3px #3BF4DB,
+        4px 4px #3BF4DB;
+    }
+    25% {
+        text-shadow: 1px 1px #3BF4DB,
+        2px 2px $contrast,
+        3px 3px #3BF4DB,
+        4px 4px #3BF4DB;
+    }
+    50% {
+        text-shadow: 1px 1px #3BF4DB,
+        2px 2px #3BF4DB,
+        3px 3px $contrast,
+        4px 4px #3BF4DB;
+    }
+    75% {
+        text-shadow: 1px 1px #3BF4DB,
+        2px 2px #3BF4DB,
+        3px 3px #3BF4DB
+        4px 4px $contrast;
+    }
+    100% {
+          text-shadow: 1px 1px #3BF4DB,
+        2px 2px #3BF4DB,
+        3px 3px #3BF4DB,
+        4px 4px #3BF4DB
+    }
+}

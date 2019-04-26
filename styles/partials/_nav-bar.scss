@@ -1,0 +1,113 @@
+.nav-bar {
+    height: 80px;
+    background: $contrast;
+    padding-top: 18px;
+    h3 {
+        text-align: center;
+    }
+}
+
+.header-nav {
+    height: 80px;
+    padding: 0 80px;    
+    width: 100%;
+    background: $contrast;
+    top: 0;
+    position: fixed;
+    display: none;
+    z-index: 40;
+    ul {
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.hamburger {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 25px;
+    z-index: 50;
+}
+
+.line {
+    position: relative;
+    background: $dark;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+
+.line-one, .line-three {
+    width: 30px;
+}
+
+.line-two {
+    width: 50px;
+}
+
+
+//HOVER 
+
+.hamburger:hover .line-one, .hamburger:hover .line-three, .hamburger:hover .line-two {
+    width: 50px;
+    background: $accent;
+}
+
+.header-nav a {
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+    &:after {
+        bottom: 0;
+        content: "";
+        height: 3px;
+        width: 0;
+        left: 50%;
+        position: absolute;
+        background: $accent;
+        transition: all 0.3s;
+    }
+}
+
+.header-nav li:hover a {
+      &:after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.header-nav a:hover {
+    transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    // text-shadow: 0 10px 10px rgba(0,0,0, 0.2);
+
+}
+
+//ACTIVE 
+
+.hamburger.active :nth-child(1){
+    transform: rotate(135deg);
+    top: 10px;
+}
+
+.hamburger.active :nth-child(3){
+    transform: rotate(-135deg);
+     bottom: 10px;
+}
+
+.hamburger.active :nth-child(2){
+    opacity: 0;
+    width: 5px;
+   
+}
+

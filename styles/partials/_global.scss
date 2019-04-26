@@ -1,0 +1,140 @@
+//ACCESSIBILITY 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//VARIABLES
+
+$accent: #fe3d4e;
+$secondary: #3BF4DB;
+$contrast: #f7f5ff;
+$dark: #01092e;
+
+
+html {
+    font-size: 125%;
+}
+
+ h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    color: $accent;
+    text-shadow: 1px 1px $dark;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+section {
+    padding-top: 80px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fa-chevron-circle-down {
+    font-size: 1.5rem;
+    // position: absolute;
+    color: $accent;
+    transition: all 0.3s;
+    bottom: 5px;
+
+}
+
+
+.down-arrow-bar {
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#header-arrow-bar, #skills-arrow-bar {
+    background: $contrast;
+}
+
+#about-arrow-bar {
+    background: url(../../assets/confetti.svg);
+    padding-bottom: 5px;
+    // background: #F2F2F2;
+}
+
+.fa-chevron-circle-down:hover {
+    color: $secondary;
+    animation: animate-down 1.5s 1;
+}
+
+.letter {
+    transition: all 0.3s;
+}
+
+.letter:hover {
+    color: $secondary;
+}
+
+//ANIMATION
+
+@keyframes animate-down {
+    0% {
+        transform: scale(1)
+    }
+    25% {
+        transform: scale(1.1)
+    }
+    50% {
+        transform: scale(1)
+    }
+    75% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+

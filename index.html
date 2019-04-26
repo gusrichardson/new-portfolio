@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gus | Front End Web Dev</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Oswald:700" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header id="home">
+        <!-- NAVIGATION STARTS -->
+        <div class="nav-bar">
+            <!-- <h3>toronto web developer</h3> -->
+            <nav class="header-nav active">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line line-one"></div>
+                <div class="line line-two"></div>
+                <div class="line line-three"></div>
+            </div>
+        </div>
+        <!-- NAVIGATION ENDS -->
+        <!-- SOCIAL NAV STARTS -->
+        <div class="social-nav">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-medium-m"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <!-- SOCIAL NAV ENDS -->
+        <div class="wrapper header-wrapper">
+            <div class="title-container">
+                <h1 id="name">Gus <span>Richardson</span></h1>
+                <h2>front end web dev 💻</h2>
+            </div>
+        </div>
+        <div class="down-arrow-bar" id="header-arrow-bar">
+            <a href="#about" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="wrapper about-wrapper">
+                <h1><span class="letter">A</span><span class="letter">b</span><span class="letter">o</span><span
+                        class="letter">u</span><span class="letter">t</span></h1>
+                <div class="about-flex">
+                    <div class="img-container">
+                        <img src="assets/headshot.jpg" alt="a headshot of me, Gus Richardson">
+                        <img src="assets/oscar-on-grass.jpg" id="oscar" alt="my brindle terrier, Oscar">
+                        <img src="assets/giorgi-kitchen.jpg" id="giorgi"
+                            alt="here I am making my Giorgi hot sauce in a commercial kitchen">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-offset="200" class="text-container">
+                        <p>Hey there! <span id="wave"> 🖐</span></p>
+                        <p>My name is Gus Richardson and I'm a front end web developer (in case you weren't sure). I'm
+                            big on making intuitive, user-friendly web applications that look nice.</p>
+                        <p>If I'm not coding (rare) there's a good chance I'm making some of my famous <a
+                                id="toggle-giorgi"> Giorgi </a> hot sauce (it's like other hot sauces - but thick!) or
+                            going for a run with my main man <a id="toggle-oscar">Oscar!</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="down-arrow-bar" id="about-arrow-bar">
+                <a href="#skills" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="wrapper skills-wrapper">
+                <h1><span class="letter">S</span><span class="letter">k</span><span class="letter">i</span><span
+                        class="letter">l</span><span class="letter">l</span><span class="letter">s</span></h1>
+                <div class="skills-flex">
+                    <div class="row row-one">
+                        <figure>
+                            <i class="fab fa-html5" alt="HTML5 logo"></i>
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure id="fig-two">
+                            <i class="fab fa-css3-alt" alt="CSS3 logo"></i>
+                            <figcaption>CSS3</figcaption>
+                        </figure>
+                        <figure id="fig-three">
+                            <i class="fab fa-js-square" alt="JavaScript logo"></i>
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <figure id="fig-four">
+                            <i class="fab fa-github" alt="github logo"></i>
+                            <figcaption>Github</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row row-two">
+                        <figure id="fig-five">
+                            <i class="fab fa-react" alt="React logo"></i>
+                            <figcaption>React</figcaption>
+                        </figure>
+                        <figure id="fig-six">
+                            <i class="fab fa-sass" alt="Sass logo"></i>
+                            <figcaption>SCSS</figcaption>
+                        </figure>
+                        <figure>
+                            <i class="devicon-jquery-plain" alt="jQuery logo"></i>
+                            <figcaption>jQuery</figcaption>
+                        </figure>
+                        <figure>
+                            <i class="devicon-visualstudio-plain" alt="visual studio code icon"></i>
+                            <figcaption>VS Code</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="down-arrow-bar" id="skills-arrow-bar">
+                <a href="#work" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+        </section>
+        <section id="work">
+            <div class="wrapper work-wrapper">
+                <h1><span class="letter">w</span><span class="letter">o</span><span class="letter">r</span><span
+                        class="letter">k</span></h1>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

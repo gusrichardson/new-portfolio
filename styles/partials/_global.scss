@@ -147,8 +147,7 @@ section {
 }
 
 #about-arrow-bar {
-    background: url(../../assets/confetti.svg);
-    // background: #F2F2F2;
+    background: #F2F2F2;
 }
 
 .fa-chevron-circle-down:hover {
@@ -162,6 +161,10 @@ section {
 
 .letter:hover {
     color: $secondary;
+}
+
+.contact-wrapper .letter:hover {
+    color: $accent;
 }
 
 //ANIMATION

@@ -2,6 +2,9 @@
     min-height: 100vh;
     background: $contrast;
     position: relative;
+    h1 {
+        margin-bottom: 5px;
+    }
 }
 
 .about-flex {
@@ -45,9 +48,6 @@
     cursor: default;
 }
 
-#about-arrow-down {
-    background: #F2F2F2;
-}
 
 //ANIMATION
 

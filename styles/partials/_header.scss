@@ -7,9 +7,10 @@ header {
     background-position: 80%;
     background-attachment: fixed;
     position: relative;
-    span {
-        display: block;
-    }
+}
+
+.block {
+    display: block;
 }
 
 .header-wrapper {
@@ -52,7 +53,13 @@ header {
 
 #name {
     font-size: 6rem;
-    animation: animate-text 3s infinite linear;
+    animation: animate-text 10s infinite linear;
+    text-shadow: 1px 1px $dark,
+    2px 2px $dark,
+    3px 3px $dark,
+    4px 4px $dark,
+    5px 5px $dark,
+    6px 6px $dark;
 }
 
 
@@ -60,32 +67,91 @@ header {
 @keyframes animate-text {
     0% {
         text-shadow: 1px 1px $contrast,
-        2px 2px #3BF4DB,
-        3px 3px #3BF4DB,
-        4px 4px #3BF4DB;
+        2px 2px $dark,
+        3px 3px $dark,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
     }
-    25% {
-        text-shadow: 1px 1px #3BF4DB,
+    10% {
+        text-shadow: 1px 1px $contrast,
         2px 2px $contrast,
-        3px 3px #3BF4DB,
-        4px 4px #3BF4DB;
+        3px 3px $dark,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
+    }
+    20% {
+        text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
+    }
+    30% {
+        text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $contrast,
+        5px 5px $dark,
+        6px 6px $dark;
+    }
+    40% {
+          text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $contrast,
+        5px 5px $contrast,
+        6px 6px $dark;
     }
     50% {
-        text-shadow: 1px 1px #3BF4DB,
-        2px 2px #3BF4DB,
+          text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
         3px 3px $contrast,
-        4px 4px #3BF4DB;
+        4px 4px $contrast,
+        5px 5px $contrast,
+        6px 6px $dark;
     }
-    75% {
-        text-shadow: 1px 1px #3BF4DB,
-        2px 2px #3BF4DB,
-        3px 3px #3BF4DB
-        4px 4px $contrast;
+       60% {
+          text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $contrast,
+        5px 5px $contrast,
+        6px 6px $dark;
+    }
+    70% {
+          text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $contrast,
+        5px 5px $dark,
+        6px 6px $dark;
+    }
+    80% {
+        text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $contrast,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
+    }
+        90% {
+        text-shadow: 1px 1px $contrast,
+        2px 2px $contrast,
+        3px 3px $dark,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
     }
     100% {
-          text-shadow: 1px 1px #3BF4DB,
-        2px 2px #3BF4DB,
-        3px 3px #3BF4DB,
-        4px 4px #3BF4DB
+        text-shadow: 1px 1px $contrast,
+        2px 2px $dark,
+        3px 3px $dark,
+        4px 4px $dark,
+        5px 5px $dark,
+        6px 6px $dark;
     }
+
 }

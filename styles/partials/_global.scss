@@ -70,6 +70,53 @@ section {
     padding-top: 80px;
 }
 
+.button {
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    //  font-family: 'Lato', sans-serif;
+     letter-spacing: 1px;
+     border: none;
+     text-transform: uppercase;
+     background: $contrast;
+     color: $dark;
+     position: relative;
+     transition: all 0.5s;
+     overflow: hidden;
+     border: 2px solid $contrast;
+     span {
+         position: absolute;
+         width: 120px;
+         height: 40px;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         padding-top: 3px;
+         transition: all 0.5s;
+     }
+}
+
+.button:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    top: -60px;
+    left: 0;
+}
+
+.button:hover:before {
+    top: 0;
+    background: $accent;
+}
+
+.button:hover span {
+    color: $contrast;
+}
+
 .wrapper {
     max-width: 1200px;
     width: 80%;

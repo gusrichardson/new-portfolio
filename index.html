@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gus | Front End Web Dev</title>
+    <title>Gus Richardson | Front End Web Dev</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet"
@@ -27,7 +27,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hamburger">
@@ -47,7 +47,12 @@
         <!-- SOCIAL NAV ENDS -->
         <div class="wrapper header-wrapper">
             <div class="title-container">
-                <h1 id="name">Gus <span>Richardson</span></h1>
+                <h1 id="name"><span class="letter">G</span><span class="letter">u</span><span
+                        class="letter">s</span><span class="block"><span class="letter">R</span><span
+                            class="letter">i</span><span class="letter">c</span><span class="letter">h</span><span
+                            class="letter">a</span><span class="letter">r</span><span class="letter">d</span><span
+                            class="letter">s</span><span class="letter">o</span><span class="letter">n</span></span>
+                </h1>
                 <h2>front end web dev 💻</h2>
             </div>
         </div>
@@ -79,6 +84,7 @@
                     </div>
                 </div>
             </div>
+            <!-- ABOUT SECTION ARROW BAR -->
             <div class="down-arrow-bar" id="about-arrow-bar">
                 <a href="#skills" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
             </div>
@@ -129,6 +135,7 @@
                     </div>
                 </div>
             </div>
+            <!-- SKILLS SECTION ARROW BAR -->
             <div class="down-arrow-bar" id="skills-arrow-bar">
                 <a href="#work" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
             </div>
@@ -150,8 +157,12 @@
                                 <p>This application was made for my favourite city service - Toronto Bike Share. The
                                     site was built by myself and three other partners using React, Firebase, and an API
                                     for locating bike stations.</p>
-                                <button>Live</button>
-                                <button>Github</button>
+                                <a href="#" class="button">
+                                    <span>Live</span>
+                                </a>
+                                <a href="#" class="button">
+                                    <span>Github</span>
+                                </a>
                             </div>
                             <div class="laptop-display">
                                 <img src="assets/bikeshare-app.png"
@@ -171,8 +182,12 @@
                                     like based on interest and price
                                     and then save them for later. This is a solo project I built using React, Firebase,
                                     and the Yelp API.</p>
-                                <button>Live</button>
-                                <button>Github</button>
+                                <a href="#" class="button">
+                                    <span>Live</span>
+                                </a>
+                                <a href="#" class="button">
+                                    <span>Github</span>
+                                </a>
                             </div>
                             <div class="laptop-display">
                                 <img src="assets/toronto-events.png"
@@ -189,8 +204,12 @@
                                 <p>Fail videos - a guilty pleasure of mine. Fill out the questionaire and this
                                     application will serve up a hot and fresh Fail video specifically catered to your
                                     tastes. I built this app using jQuery.</p>
-                                <button>Live</button>
-                                <button>Github</button>
+                                <a href="#" class="button">
+                                    <span>Live</span>
+                                </a>
+                                <a href="#" class="button">
+                                    <span>Github</span>
+                                </a>
                             </div>
                             <div class="laptop-display">
                                 <img src="assets/fail-generator.png"
@@ -208,8 +227,12 @@
                                     famous quotes and translates them to Hungarian and then back to
                                     English. Figure out who said it in under 10 seconds or lose a point! This app uses
                                     jQuery and the Google Translate API.</p>
-                                <button>Live</button>
-                                <button>Github</button>
+                                <a href="#" class="button">
+                                    <span>Live</span>
+                                </a>
+                                <a href="#" class="button">
+                                    <span>Github</span>
+                                </a>
                             </div>
                             <div class="laptop-display">
                                 <img src="assets/broken-tele.png"
@@ -219,8 +242,47 @@
                     </div>
                 </div>
             </div>
+            <!-- END OF CAROUSEL -->
+            <!-- WORK SECTION DOWN ARROW BAR -->
+            <div class="down-arrow-bar" id="work-arrow-bar">
+                <a href="#contact" class="scroll-down"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="wrapper contact-wrapper">
+                <h1>contact</h1>
+                <div class="contact-container">
+                    <form action="">
+                        <div class="form-name">
+                            <input type="text" id="user-name">
+                            <label for="user-name">Name</label>
+                        </div>
+                        <div class="form-email">
+                            <input type="email" id="user-email">
+                            <label for="user-email">E-mail</label>
+                        </div>
+                        <div class="form-message">
+                            <textarea name="user-message" id="user-message" cols="30" rows="6"></textarea>
+                            <label for="user-message">Message</label>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                    <div class="contact-social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="far fa-envelope"></i>
+                        <i class="fab fa-medium-m"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
+    <!-- END MAIN -->
+    <footer>
+        <h3>Copyright © 2019 Gus Richardson</h3>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'

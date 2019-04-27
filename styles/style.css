@@ -206,6 +206,7 @@ h1 {
 p {
   line-height: 1.6;
   font-family: 'Lato', sans-serif;
+  color: #01092e;
 }
 
 ul {
@@ -257,6 +258,34 @@ section {
   padding-top: 3px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.button:focus {
+  border: 2px solid #fe3d4e;
+}
+
+a:focus i {
+  color: #fe3d4e;
+}
+
+#cv-button {
+  width: 180px;
+  height: 40px;
+  background: #3BF4DB;
+  border: 2px solid #3BF4DB;
+}
+
+#cv-button p {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  left: 20px;
+  top: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#cv-button:hover p {
+  color: #f7f5ff;
 }
 
 .button:before {
@@ -419,6 +448,19 @@ section {
   padding-top: 25px;
   z-index: 50;
   cursor: pointer;
+}
+
+.hambuger:focus ~ div {
+  background: #fe3d4e;
+}
+
+.hamburger:active ~ div {
+  background: #fe3d4e;
+}
+
+.header-nav a:focus:after {
+  width: 100%;
+  left: 0;
 }
 
 .line {
@@ -840,6 +882,8 @@ figure:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: fade-in 1s linear;
+  animation: fade-in 0.5s linear;
 }
 
 .prev-slide, .next-slide {
@@ -895,6 +939,24 @@ figure:hover {
   width: 70%;
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #contact {
   min-height: 100vh;
   background: url(../../assets/red-phone.jpg);
@@ -931,7 +993,7 @@ form label {
   left: 12px;
   font-family: 'Lato', sans-serif;
   color: #01092e;
-  opacity: 1;
+  opacity: 0;
   font-size: 0.8rem;
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
@@ -975,7 +1037,7 @@ form button {
 }
 
 form button:hover {
-  background: rgba(254, 61, 78, 0.1);
+  background: #F2F2F2;
   border: 2px solid rgba(254, 61, 78, 0.5);
   color: #fe3d4e;
 }
@@ -988,6 +1050,25 @@ form button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact-social i {
+  color: #01092e;
+  margin: 15px 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+
+.contact-social i:hover {
+  color: #fe3d4e;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+.dial-one:hover, .dial-two:hover, .dial-three:hover {
+  cursor: pointer;
 }
 
 footer {

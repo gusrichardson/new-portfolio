@@ -30,7 +30,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="hamburger">
+            <div class="hamburger" tabindex="1">
                 <div class="line line-one"></div>
                 <div class="line line-two"></div>
                 <div class="line line-three"></div>
@@ -39,11 +39,17 @@
         <!-- NAVIGATION ENDS -->
         <!-- SOCIAL NAV STARTS -->
         <div class="social-nav">
-            <a href="https://twitter.com/webDevGus"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/gus-richardson-6379ab53/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:gusrichardson1@gmail.com"><i class="far fa-envelope"></i></a>
-            <a href="https://medium.com/@gusrichardson1"> <i class="fab fa-medium-m"></i></a>
-            <a href="https://github.com/gusrichardson"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/webDevGus" aria-label="link to my Twitter profile"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/gus-richardson-6379ab53/" aria-label="link to my LinkedIn profile"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:gusrichardson1@gmail.com"
+                aria-label="link to send me an e-mail at gus richardson 1 at g mail dot com"><i
+                    class="far fa-envelope"></i></a>
+            <a href="https://medium.com/@gusrichardson1" aria-label="link to my blogging profile on Medium dot com"> <i
+                    class="fab fa-medium-m"></i></a>
+            <a href="https://github.com/gusrichardson" aria-label="link to my github account"><i
+                    class="fab fa-github"></i></a>
         </div>
         <!-- SOCIAL NAV ENDS -->
         <div class="wrapper header-wrapper">
@@ -81,6 +87,9 @@
                         <p>If I'm not coding (rare) there's a good chance I'm making some of my famous <a
                                 id="toggle-giorgi"> Giorgi </a> hot sauce (it's like other hot sauces - but thick!) or
                             going for a run with my main man <a id="toggle-oscar">Oscar!</a></p>
+                        <a href="gus-richardson-resume.pdf" class="button" id="cv-button">
+                            <p>Download CV</p>
+                        </a>
 
                     </div>
                 </div>
@@ -100,7 +109,7 @@
                             class="letter">l</span><span class="letter">l</span><span class="letter">s</span></h1>
                 </div>
                 <div class="skills-flex">
-                    <div class="row row-one">
+                    <div class="row row-one" data-aos="flip-left">
                         <figure>
                             <i class="fab fa-html5" alt="HTML5 logo"></i>
                             <figcaption>HTML5</figcaption>
@@ -118,7 +127,7 @@
                             <figcaption>Github</figcaption>
                         </figure>
                     </div>
-                    <div class="row row-two">
+                    <div class="row row-two" data-aos="flip-right">
                         <figure id="fig-five">
                             <i class="fab fa-react" alt="React logo"></i>
                             <figcaption>React</figcaption>
@@ -148,7 +157,7 @@
         <!-- BEGIN WORK SECTION -->
         <section id="work">
             <div class="wrapper work-wrapper">
-                <h1 id="work-title"><span class="letter">w</span><span class="letter">o</span><span
+                <h1 data-aos="flip-up" id="work-title"><span class="letter">w</span><span class="letter">o</span><span
                         class="letter">r</span><span class="letter">k</span></h1>
                 <div class="work-carousel">
 
@@ -253,21 +262,23 @@
         </section>
         <section id="contact">
             <div class="wrapper contact-wrapper">
-                <h1><span class="letter">c</span><span class="letter">o</span><span class="letter">n</span><span
-                        class="letter">t</span><span class="letter">a</span><span class="letter">c</span><span
-                        class="letter">t</span></h1>
+                <h1><span class="letter dial-one">c</span><span class="letter dial-two">o</span><span
+                        class="letter dial-three">n</span><span class="letter dial-one">t</span><span
+                        class="letter dial-two">a</span><span class="letter dial-three">c</span><span
+                        class="letter dial-one">t</span></h1>
                 <div class="contact-container">
-                    <form action="">
+                    <form action="http://www.focuspocus.io/magic/a2f64bf95168a0cda50ad753eab8ea9c" method="POST">
                         <div class="form-name">
-                            <input type="text" id="user-name">
+                            <input type="text" id="user-name" placeholder="Name">
                             <label for="user-name">Name</label>
                         </div>
                         <div class="form-email">
-                            <input type="email" id="user-email">
+                            <input type="email" id="user-email" placeholder="E-mail">
                             <label for="user-email">E-mail</label>
                         </div>
                         <div class="form-message">
-                            <textarea name="user-message" id="user-message" cols="30" rows="6"></textarea>
+                            <textarea name="user-message" id="user-message" cols="30" rows="6"
+                                placeholder="Message"></textarea>
                             <label for="user-message">Message</label>
                         </div>
                         <button>Submit</button>
@@ -282,6 +293,18 @@
                     </div>
                 </div>
             </div>
+            <audio id="dial-one">
+                <source src="assets/dial-1.mp3">
+                </source>
+            </audio>
+            <audio id="dial-two">
+                <source src="assets/dial-2.mp3">
+                </source>
+            </audio>
+            <audio id="dial-three">
+                <source src="assets/dial-3.mp3">
+                </source>
+            </audio>
 
         </section>
     </main>

@@ -70,4 +70,15 @@ $(document).ready(function () {
     }
 
     //code adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+    $('.dial-one').on("click", function () {
+        $('#dial-one')[0].play();
+    })
+    $('.dial-two').on('click', function () {
+        $('#dial-two')[0].play();
+    })
+    $('.dial-three').on('click', function () {
+        $('#dial-three')[0].play();
+    })
+
 })

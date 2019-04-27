@@ -37,6 +37,21 @@
     cursor: pointer;
 }
 
+.hambuger:focus ~ div {
+    background: $accent;
+}
+
+.hamburger:active ~ div {
+    background: $accent;
+}
+
+.header-nav a:focus {
+      &:after {
+        width: 100%;
+        left: 0;
+    }
+}
+
 .line {
     position: relative;
     background: $dark;

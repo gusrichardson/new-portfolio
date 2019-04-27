@@ -47,6 +47,7 @@ h1 {
 p {
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
+    color: $dark;
 }
 
 ul {
@@ -96,6 +97,32 @@ section {
          padding-top: 3px;
          transition: all 0.5s;
      }
+}
+
+.button:focus {
+    border: 2px solid $accent;
+}
+
+a:focus i {
+    color: $accent;
+}
+
+#cv-button {
+    width: 180px;
+    height: 40px;
+    background: $secondary;
+    border: 2px solid $secondary;
+    p {
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        left: 20px;
+        top: 2px;
+        transition: all 0.5s;
+    }
+}
+
+#cv-button:hover p {
+    color: $contrast;
 }
 
 .button:before{

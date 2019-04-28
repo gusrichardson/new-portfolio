@@ -1,15 +1,31 @@
 
 
-
 $(document).ready(function () {
     AOS.init();
 
     //BURGER TOGGLE NAV
+    const minWidth = window.matchMedia("(min-width: 900px)");
+
     $('.hamburger').on('click', function () {
         $(this).toggleClass('active');
         $('.header-nav').slideToggle('slow');
-        $('.social-nav').slideToggle('slow');
+        //if screen is at least 900px, toggle the social nav otherwise do not
+        if (minWidth.matches && $('.hamburger').hasClass('active')) {
+            $('.social-nav').slideToggle('slow');
+        }
     })
+
+    // REMOVE SOCIAL NAV BAR IF SCREEN SHRINKS TO TABLET SIZE OR BELOW
+    $(window).resize(function () {
+        if ($(window).width() <= 899) {
+            $('.social-nav').css({
+                display: 'none'
+            })
+        }
+    });
+
+
+
 
     //SCROLL TO NEXT SECTION
     $('a[href*="#"]').on('click', function () {

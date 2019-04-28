@@ -575,6 +575,12 @@ header {
   -moz-transform: scale(1.2);
 }
 
+@media (max-width: 900px) {
+  .social-nav {
+    display: none;
+  }
+}
+
 .title-container {
   position: absolute;
   bottom: 0;
@@ -596,7 +602,7 @@ header {
 
 @media (max-width: 900px) {
   #name {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 

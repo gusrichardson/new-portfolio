@@ -21,6 +21,7 @@
     height: 400px;
     display: flex;
     -webkit-animation: fade-in 1s linear;
+    -moz-animation: fade-in 1s linear;
     animation: fade-in 0.5s linear;
 }
 
@@ -52,11 +53,15 @@
     font-size: 3rem;
     color: $accent;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .prev-slide:hover, .next-slide:hover {
     color: $secondary;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
     transform: scale(1.1);
 }
 .prev-slide {

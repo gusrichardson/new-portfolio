@@ -14,6 +14,8 @@
     height: 500px;
     padding-top: 220px;
      h1 {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
         transform: rotate(-90deg);
     }
 }
@@ -86,6 +88,8 @@ figure {
     height: 100px;
     padding-top: 0;
      h1 {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
         transform: rotate(0deg);
         text-align: center;
     }
@@ -124,6 +128,8 @@ figure {
 
 
 figure:hover {
+    -webkit-transform:skewX(-5deg) scale(1.05);
+    -moz-transform: skewX(-5deg) scale(1.05); 
     transform: skewX(-5deg) scale(1.05);
     margin-right: 30px;
     margin-top: 30px;

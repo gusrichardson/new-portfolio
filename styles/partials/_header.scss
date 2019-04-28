@@ -9,11 +9,6 @@ header {
     position: relative;
 }
 
-// @media (max-width: $tablet-width) {
-//     header {
-//         min-height: 90vh;
-//     }
-// }
 @media (max-width: $mobile-med) {
     header {
         background-position: 90% 0%;
@@ -57,6 +52,8 @@ header {
     i {
         color: $dark;
         margin: 15px 10px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
         transition: all 0.3s;
     }
     i:hover {
@@ -90,6 +87,8 @@ header {
 
 #name {
     font-size: 6rem;
+    -moz-animation: animate-text 10s infinite linear; 
+    -webkit-animation:  animate-text 10s infinite linear; 
     animation: animate-text 10s infinite linear;
     text-shadow: 1px 1px $dark,
     2px 2px $dark,

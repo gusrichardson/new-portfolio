@@ -374,7 +374,7 @@ a:focus i {
 .fa-chevron-circle-down:hover {
   color: #3BF4DB;
   -webkit-animation: animate-down 1.5s 1;
-          animation: animate-down 1.5s 1;
+  animation: animate-down 1.5s 1;
 }
 
 .letter {
@@ -393,46 +393,46 @@ a:focus i {
 @-webkit-keyframes animate-down {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   25% {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   50% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   75% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes animate-down {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   25% {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   50% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   75% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -676,7 +676,7 @@ header {
 #name {
   font-size: 6rem;
   -webkit-animation: animate-text 10s infinite linear;
-          animation: animate-text 10s infinite linear;
+  animation: animate-text 10s infinite linear;
   text-shadow: 1px 1px #01092e, 2px 2px #01092e, 3px 3px #01092e, 4px 4px #01092e, 5px 5px #01092e, 6px 6px #01092e;
 }
 
@@ -887,7 +887,7 @@ header {
 
 #wave:hover {
   -webkit-animation: wave 1s 1;
-          animation: wave 1s 1;
+  animation: wave 1s 1;
   cursor: default;
 }
 
@@ -960,7 +960,7 @@ header {
 
 .skills-title-container h1 {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .skills-flex {
@@ -1047,7 +1047,7 @@ figure figcaption {
   }
   .skills-title-container h1 {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     text-align: center;
   }
   .skills-flex {
@@ -1092,7 +1092,7 @@ figure figcaption {
 
 figure:hover {
   -webkit-transform: skewX(-5deg) scale(1.05);
-          transform: skewX(-5deg) scale(1.05);
+  transform: skewX(-5deg) scale(1.05);
   margin-right: 30px;
   margin-top: 30px;
   -webkit-box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.1);
@@ -1163,7 +1163,7 @@ figure:hover {
 .prev-slide:hover, .next-slide:hover {
   color: #3BF4DB;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .prev-slide {
@@ -1416,9 +1416,8 @@ form button:hover {
 
 .contact-social i:hover {
   color: #fe3d4e;
-  transform: scale(1.2);
   -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .dial-one:hover, .dial-two:hover, .dial-three:hover {

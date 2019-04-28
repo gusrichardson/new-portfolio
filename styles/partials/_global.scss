@@ -7,14 +7,15 @@ $dark: #01092e;
 
 //MEDIA QUERIES
 $tablet-width: 900px;
-$mobile-large: 600px;
-$mobile-med: 450px;
+$mobile-large: 650px;
+$mobile-med: 500px;
 $mobile-small: 375px;
 
 
 
 html {
     font-size: 125%;
+    overflow-x: hidden;
 }
 
  h2, h3, ul, li {
@@ -23,6 +24,18 @@ html {
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
     letter-spacing: 1px;
+}
+
+@media (max-width: $mobile-med) {
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: $mobile-med) {
+    li, p {
+        font-size: 0.8rem;
+    }
 }
 
 h1 {
@@ -42,6 +55,12 @@ p {
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
     color: $dark;
+}
+
+@media (max-width: $mobile-med) {
+    li, p {
+        font-size: 0.9rem;
+    }
 }
 
 ul {
@@ -64,6 +83,13 @@ img {
 section {
     padding-top: 80px;
 }
+
+@media (max-width: $mobile-large) {
+    section {
+        padding-top: 40px;
+    }
+}
+
 
 .wrapper {
     max-width: 1200px;

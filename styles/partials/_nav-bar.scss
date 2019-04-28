@@ -9,7 +9,7 @@
 
 .header-nav {
     height: 80px;
-    padding: 0 80px;    
+    padding: 0 80px; 
     width: 100%;
     background: $contrast;
     top: 0;
@@ -23,6 +23,12 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+}
+
+@media (max-width: $mobile-large) {
+    .header-nav {
+        padding: 0 30px;
     }
 }
 

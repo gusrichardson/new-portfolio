@@ -14,9 +14,28 @@ header {
         min-height: 80vh;
     }
 }
+@media (max-width: $mobile-med) {
+    header {
+        background-position: 90% 0%;
+    }
+}
 
 .block {
     display: block;
+}
+
+.mobile-title {
+    display: none;
+}
+
+.mobile-title:nth-last-of-type(1){
+    color: $secondary;
+}
+
+@media (max-width: $mobile-med) {
+    .mobile-title {
+        display: block;
+    }
 }
 
 .header-wrapper {
@@ -45,12 +64,6 @@ header {
     }
 }
 
-@media (max-width: $tablet-width) {
-    .social-nav {
-        display: none;
-    }
-}
-
 
 
 .title-container {
@@ -62,6 +75,13 @@ header {
     i {
         margin-top: 30px;
      }
+}
+
+@media (max-width: $mobile-med) {
+    .title-container {
+        height: 450px;
+        padding-top: 0;
+    }
 }
 
 
@@ -78,6 +98,18 @@ header {
 @media (max-width: $tablet-width) {
     #name {
         font-size: 4.5rem;
+    }
+}
+
+@media (max-width: $mobile-large) {
+    #name {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: $mobile-med) {
+    #name {
+        display: none;
     }
 }
 

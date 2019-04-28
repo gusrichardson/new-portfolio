@@ -9,11 +9,11 @@ header {
     position: relative;
 }
 
-@media (max-width: $tablet-width) {
-    header {
-        min-height: 80vh;
-    }
-}
+// @media (max-width: $tablet-width) {
+//     header {
+//         min-height: 90vh;
+//     }
+// }
 @media (max-width: $mobile-med) {
     header {
         background-position: 90% 0%;
@@ -26,10 +26,13 @@ header {
 
 .mobile-title {
     display: none;
+    margin-top: 20px;
+    font-size: 4.5rem;
 }
 
 .mobile-title:nth-last-of-type(1){
     color: $secondary;
+    margin-top: 0;
 }
 
 @media (max-width: $mobile-med) {

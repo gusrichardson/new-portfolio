@@ -32,6 +32,12 @@ html {
     }
 }
 
+@media (max-width: $mobile-small) {
+    h2, h3 {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: $mobile-med) {
     li, p {
         font-size: 0.8rem;
@@ -129,6 +135,16 @@ section {
          padding-top: 3px;
          transition: all 0.5s;
      }
+}
+
+@media (max-width: $mobile-small) {
+    .button {
+        width: 100px;
+        span {
+            left: -10px;
+        }
+    }
+   
 }
 
 .button:focus {

@@ -184,6 +184,12 @@ h2, h3, ul, li {
   }
 }
 
+@media (max-width: 375px) {
+  h2, h3 {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 500px) {
   li, p {
     font-size: 0.8rem;
@@ -281,6 +287,15 @@ section {
   padding-top: 3px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 375px) {
+  .button {
+    width: 100px;
+  }
+  .button span {
+    left: -10px;
+  }
 }
 
 .button:focus {
@@ -462,6 +477,22 @@ a:focus i {
   }
 }
 
+@media (max-width: 500px) {
+  .header-nav {
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  .header-nav ul {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-nav {
+    padding: 0 10px;
+  }
+}
+
 .hamburger {
   width: 80px;
   height: 80px;
@@ -567,12 +598,6 @@ header {
   position: relative;
 }
 
-@media (max-width: 900px) {
-  header {
-    min-height: 80vh;
-  }
-}
-
 @media (max-width: 500px) {
   header {
     background-position: 90% 0%;
@@ -585,10 +610,13 @@ header {
 
 .mobile-title {
   display: none;
+  margin-top: 20px;
+  font-size: 4.5rem;
 }
 
 .mobile-title:nth-last-of-type(1) {
   color: #3BF4DB;
+  margin-top: 0;
 }
 
 @media (max-width: 500px) {

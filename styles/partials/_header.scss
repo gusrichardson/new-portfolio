@@ -9,6 +9,12 @@ header {
     position: relative;
 }
 
+@media (max-width: $tablet-width) {
+    header {
+        min-height: 80vh;
+    }
+}
+
 .block {
     display: block;
 }
@@ -60,6 +66,11 @@ header {
     4px 4px $dark,
     5px 5px $dark,
     6px 6px $dark;
+}
+@media (max-width: $tablet-width) {
+    #name {
+        font-size: 5rem;
+    }
 }
 
 

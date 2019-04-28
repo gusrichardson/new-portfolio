@@ -7,9 +7,21 @@
     }
 }
 
+@media (max-width: $mobile-large) {
+    #about h1 {
+        text-align: center;
+    }
+}
+
 .about-flex {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: $mobile-large) {
+  .about-flex {
+      flex-direction: column;
+  }
 }
 
 .text-container {
@@ -19,11 +31,49 @@
     }
 }
 
+@media (max-width: $mobile-large) {
+   .text-container {
+       width: 100%;
+       margin-top: 20px;
+       text-align: center;
+   }
+}
+
+//HEADSHOT CONTAINER
 .img-container {
+    position: relative;
+    box-shadow: -30px 30px 0 -20px $secondary;
+}
+
+.desktop-img {
     width: 220px;
     height: 330px;
     position: relative;
     box-shadow: -30px 30px 0 -20px $secondary;
+    display: block;
+}
+
+.mobile-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: none;
+}
+
+@media (max-width: $mobile-large) {
+   .desktop-img {
+        display: none;
+    }
+         .mobile-img {
+        display: block;
+    }
+}
+
+
+@media (max-width: $mobile-large) {
+    .img-container {
+        margin: 0 auto;
+    }
 }
 
 #oscar, #giorgi {

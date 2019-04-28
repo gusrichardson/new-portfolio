@@ -1,23 +1,16 @@
-//ACCESSIBILITY 
-.visuallyhidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 //VARIABLES
 
 $accent: #fe3d4e;
 $secondary: #3BF4DB;
 $contrast: #f7f5ff;
 $dark: #01092e;
+
+//MEDIA QUERIES
+$tablet-width: 900px;
+$mobile-large: 600px;
+$mobile-med: 450px;
+$mobile-small: 375px;
+
 
 
 html {
@@ -44,6 +37,7 @@ h1 {
     text-transform: uppercase;
 }
 
+
 p {
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
@@ -69,6 +63,18 @@ img {
 
 section {
     padding-top: 80px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+    .wrapper {
+        width: 90%;
+    }
 }
 
 .button {
@@ -144,11 +150,6 @@ a:focus i {
     color: $contrast;
 }
 
-.wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-}
 
 .fa-chevron-circle-down {
     font-size: 1.5rem;

@@ -1,6 +1,7 @@
 
 
 $(document).ready(function () {
+    //initialize animate on scroll
     AOS.init();
 
     //BURGER TOGGLE NAV
@@ -9,7 +10,7 @@ $(document).ready(function () {
     $('.hamburger').on('click', function () {
         $(this).toggleClass('active');
         $('.header-nav').slideToggle('slow');
-        //if screen is at least 900px, toggle the social nav otherwise do not
+        //if screen is at least 900px aand the humburger menu has the class of 'active' added to it, toggle the social nav
         if (minWidth.matches && $('.hamburger').hasClass('active')) {
             $('.social-nav').slideToggle('slow');
         }
@@ -23,8 +24,6 @@ $(document).ready(function () {
             })
         }
     });
-
-
 
 
     //SCROLL TO NEXT SECTION

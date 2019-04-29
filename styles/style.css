@@ -598,9 +598,11 @@ header {
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   header {
-    background-position: 90% 0%;
+    background: url(../../assets/laptop-mobile.jpg);
+    background-position: 60% 10%;
+    background-size: cover;
   }
 }
 

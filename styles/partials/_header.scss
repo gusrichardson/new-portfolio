@@ -9,11 +9,19 @@ header {
     position: relative;
 }
 
-@media (max-width: $mobile-med) {
+@media (max-width: $mobile-large) {
     header {
-        background-position: 90% 0%;
+        background: url(../../assets/laptop-mobile.jpg);
+        background-position: 60% 10%;
+        background-size: cover;
     }
 }
+
+// @media (max-width: $mobile-med) {
+//     header {
+//         background-position: 90% 0%;
+//     }
+// }
 
 .block {
     display: block;

@@ -5,25 +5,11 @@ $(document).ready(function () {
     AOS.init();
 
     //BURGER TOGGLE NAV
-    const minWidth = window.matchMedia("(min-width: 900px)");
-
     $('.hamburger').on('click', function () {
         $(this).toggleClass('active');
         $('.header-nav').slideToggle('slow');
-        //if screen is at least 900px aand the humburger menu has the class of 'active' added to it, toggle the social nav
-        if (minWidth.matches && $('.hamburger').hasClass('active')) {
-            $('.social-nav').slideToggle('slow');
-        }
+        $('.social-nav').slideToggle('slow');
     })
-
-    // REMOVE SOCIAL NAV BAR IF SCREEN SHRINKS TO TABLET SIZE OR BELOW
-    $(window).resize(function () {
-        if ($(window).width() <= 899) {
-            $('.social-nav').css({
-                display: 'none'
-            })
-        }
-    });
 
 
     //SCROLL TO NEXT SECTION

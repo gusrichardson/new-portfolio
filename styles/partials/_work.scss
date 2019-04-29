@@ -86,13 +86,21 @@
 @media (max-width: $mobile-large) {
    .prev-slide {
        top: 80%;
-       left: 20px;
+       left: 10px;
        font-size: 2rem;
+       color: $dark;
    }
    .next-slide {
        top: 80%;
        right: 10px;
        font-size: 2rem;
+       color: $dark;
+   }
+    .next-slide:hover {
+    color: $accent;
+   }
+   .prev-slide:hover {
+       color: $accent;
    }
 }
 
